@@ -1,0 +1,412 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Century Gothic'; sans serif;
+	background: #191C32;
+}
+
+header{
+	width: 100%;
+	padding: 40px;
+	color: white;
+	text-align: center;
+	background: #112d43;
+}
+
+nav ul{
+	list-style: none;
+	background: #164884;
+	text-align: center;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+	transition: all ease-in-out 0.8s;
+}
+
+ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li:hover{
+	background: #10c6d3;
+}
+
+.Oculto{
+	font-size: 20px;
+	padding: 16px;
+	background: #112d43;
+	color: white;
+	cursor: pointer;
+	display: none;
+}
+/* Diseño de la web responsive */
+
+@media (max-widtH: 700px){
+	ul li{
+		width: 100%;
+		padding: 15px;
+		text-align: left;
+	}
+	nav ul{
+		display: none;
+	}
+	.Oculto{
+		display: block;
+	}
+}
+
+/*-----Formulario-----*/
+
+.tituloreg{
+	color: #00FFFF;
+	text-align: center;
+	padding: 20px;
+}
+
+.FormularioRegistros{
+	width: 95%;
+	max-width: 500px;
+	margin: auto;
+	background: white;
+	border-radius: 20px;
+}
+
+.TituloFormulario{
+	background: #164884;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 30px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom: 0px solid red;
+}
+
+.ContenedorIngreso{
+	padding: 10px 3px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+input{
+	margin-bottom: 15px;
+	padding: 15px;
+	font-size: 16px;
+	border-radius: 8px;
+	border: 1px solid #46A4FF;
+}
+
+.Ingreso-100{
+	width: 100%;
+}
+
+.Ingreso-50{
+	width: 46%;
+}
+
+.BotonEnviar{
+	background: #164884;
+	color: #fff;
+	margin: auto;
+	padding: 10px 40px;
+	cursor: pointer;
+}
+
+.LinkFormulario{
+	width: 100%;
+	margin: 0;
+	font-size: 15px;
+	text-align: center;
+}
+
+/*----Texto y foto-------*/
+.centrar{
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	border: 0px solid red;
+	margin: auto;
+	text-align: center;
+	padding: 20px;
+}
+
+.izquierda{
+	width: 50%;
+	height: auto; overflow: hidden;
+	border: 0px solid red;
+	display: inline-block;
+}
+
+.derecha{
+	width: 50%;
+	height: auto; overflow: hidden;
+	border: 0px solid red;
+	display: inline-block;
+}
+
+.izquierda{ float: left; text-align: left; }
+
+.subtitulo{
+	color: #00FFFF;
+}
+
+.titulo-principal{
+	color: #00FFFF;
+	font-size: 60px;
+}
+
+.descripcion{
+	color: white;
+	font-weight: 300;
+	text-align: left;
+}
+
+.derecha{ float: right; }
+
+.img-pres{
+	width: 51%;
+}
+
+.boton{
+	padding: 14px 24px;
+	background: #164884;
+	color: #fff;
+	border-radius: 20px;
+	border: 0px;
+	cursor: pointer;
+	transition: all ease-in-out 0.5s;
+}
+
+.boton:hover{
+	background: #25a925;
+}
+
+.datos{
+	color: #00FFFF;
+	font-size: 40px;
+}
+
+.datospersonales{
+	color: #00FFFF;
+}
+
+.inge{
+	width: 73%;
+}
+
+/*.............por que elgirnos............*/
+
+.elegir{
+	padding: 50px 0px;
+}
+
+.elegir .derecha {
+	text-align: left;
+}
+
+.textdescrip{
+	text-align: left;
+}
+
+.img-elige{
+	width: 90%;
+}
+
+.elegir .derecha .texto-naranja{
+	color: #fff;
+}
+
+.elegir .derecha h1{
+	color: #00FFFF;
+	font-size: 35px;
+}
+
+.elegir .derecha p{
+	color: #fff;
+	font-weight: 300;
+}
+
+.opciones{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.opcion{
+	width: 45%;
+	border: solid 1px #ccc;
+	margin-bottom: 30px;
+	padding: 7px;
+	border-left: 4px solid #00FFFF;
+	border-radius: 7px;
+	color: #fff;
+}
+
+.opcion:hover{
+	color: #00FFFF;
+}
+
+.opcion .img-opciones{
+	width: 20%;
+	float: left;
+	margin-right: 10px;
+}
+
+.texto-opciones{
+	margin-top: 15px;
+}
+
+
+/*----notificaciones-----*/
+.notificaciones{
+	height: auto;
+	overflow: hidden;
+	background-image: url('../img/dos.fw.png');
+	padding: 30px 0px;
+	color: #fff;
+
+}
+
+.notificaciones h4{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.form-notificaciones{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.entrada-not{
+	width: 40%;
+	padding: 15px;
+	border-radius: 7px;
+	border: 0px;
+}
+
+.boton-not{
+	padding: 17px 35px;
+	background: #b83131;
+	color: #fff;
+	border-radius: 7px;
+	border: 0px;
+}
+
+.boton-not:hover{
+	background: #bc2121;
+}
+
+/*----footer-----*/
+.footer{
+	height: 438px;
+	width: 100%;
+	padding: 40px 0px;
+	background-image: url('../img/footer.fw.png');
+}
+
+.footer .centrar .izquierda{
+	color: #ccc;
+}
+
+.footer .centrar .izquierda h4,p{
+	text-align: center;
+}
+
+.footer .centrar .izquierda p{
+	border-top: 1px solid #fff;
+}
+
+.entrada-form{
+	width: 60%;
+	margin-bottom: 10px;
+	padding: 8px 5px;
+}
+
+.boton-contact{
+	padding: 8px 15px;
+	background: #b83131;
+	color: #fff;
+	border-radius: 7px;
+	border: 0px;	
+}
+
+.boton-contact:hover{
+	background: #bc2121;
+}
+
+.pie{
+	color: #c1c1c1;
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+}
+
+.formulario{
+	width: 40%;
+	height: auto; overflow: hidden;
+	border: 0px solid red;
+	display: inline-block;
+	text-align: center;
+}
+
+.formulario{ float: right; }
+
+@media screen and (max-width:700px){
+    .izquierda{
+        width: 340px;
+    }
+	.descripcion{
+		width: 300px;
+	}
+	.derecha{
+		margin: 10px 0px;
+		float: none;
+		width: 300px;
+	}
+	.img-pres{
+		width: 300px;
+	}
+	.titulo-principal{
+		font-size: 50px;
+	}
+	.entrada-not{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.texto-opciones{
+		margin-top: 28px;
+	}
+	.opcion{
+		width: 48%;
+	}
+	.footer{
+		height: 790px;
+	}
+	.footizqui{
+		width: 300px;
+	}
+	.formulario{
+		float: none;
+		width: 260px;
+	}
+	.entrada-form{
+		margin-bottom: 10px;
+	}
+}

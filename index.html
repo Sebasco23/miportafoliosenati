@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Estilos/Estilosindex.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<title>Mi Portafolio</title>
+</head>
+<body>
+	<header>
+		<h1>Alex Collao</h1>
+	</header>
+
+	<nav class="menu">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="quiensoy.html">Quien soy</a></li>
+			<li><a href="mistrabajos.html">Mis Trabajos</a></li>
+			<li><a href="resgistrate.html">Registrate</a></li>
+			<li><a href="#foot">Contactame</a></li>
+		</ul>
+		<div class="Oculto"><i class="fa fa-bars"aria-hidden="true"></i>
+			Menu
+		</div>
+	</nav>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+	<script >
+		$(".Oculto").on('click', function(){
+			$("nav ul").toggle('slow');
+		})
+	</script>
+
+	<div class="centrar">
+		<div class="izquierda">
+			<h4 class="subtitulo">INICIO</h4>
+			<br>
+	
+			<h1 class="titulo-principal">MI PORTAFOLIO</h1>
+	
+			<br>
+			<p class="descripcion">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum itaque vero sint quisquam accusamus ipsam dolor velit odio quod tempora ratione minus numquam inventore, ad corporis perspiciatis, id iste libero?
+			</p>
+	
+			<br>
+	
+			<input type="submit" name="contratar" value="Mas Informacion" class="boton">
+	
+		</div>
+	
+		<div class="derecha">
+			<img src="img/portafolio.jpg" class="img-pres">
+		</div>
+	</div>
+
+	<div class="bloque notificaciones">
+		<div class="centrar">
+			<h4>¿QUE DESEAS HACER?</h4><br>
+			<h1>Hablanos y dinos que hacer</h1>
+			<br>
+	
+			<div class="form-notificaciones">
+				<input type="text" name="nombre" class="entrada-not" placeholder="Nombre:">
+				<input type="text" name="correo" class="entrada-not" placeholder="E-Mail:">
+				<input type="submit" name="enviar" value="Suscribirse" class="boton-not">
+			</div>
+	
+		</div>
+	</div>
+
+	<div class="bloque elegir">
+		<div class="centrar">
+			<div class="izquierda">
+				<img src="img/hero-img.png" class="img-elige">
+			</div>
+
+			<div class="derecha">
+				<h4 class="texto-naranja">TU NEGOCIO DEBE CRECER</h4>
+
+				<h1>¿POR QUÉ ELEGIRNOS?</h1>
+
+				<br>
+				<p class="textdescrip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati assumenda, accusamus tempore id ut commodi ducimus suscipit earum quo nisi blanditiis iusto asperiores repellendus doloribus sed nemo vel enim error?
+					<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem mollitia tempore nulla, rerum sequi vitae dicta aut sapiente unde quasi molestiae magnam at sunt nisi dolorum eaque modi eum eveniet.
+
+				</p>
+
+				<br>
+				<br>
+
+				<div class="opciones">
+
+					<div class="opcion">
+						<img src="img/profesional.png" class="img-opciones">
+						<h4 class="texto-opciones">Profesionalismo</h4>
+					</div>
+
+					<div class="opcion">
+						<img src="img/capacitacion.png" class="img-opciones">
+						<h4 class="texto-opciones">Personal Capacitado</h4>
+					</div>
+
+					<div class="opcion">
+						<img src="img/comprometidos-negocio.png" class="img-opciones">
+						<h4 class="texto-opciones">Comprometidos</h4>
+					</div>
+
+					<div class="opcion">
+						<img src="img/responsabilidad.png" class="img-opciones">
+						<h4 class="texto-opciones">Responsable</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="foot">
+		<footer class="bloque footer">
+			<div class="centrar">
+	
+				<div class="izquierda footizqui">
+					<h4>Contáctenos</h4>
+					<br>
+					<p>
+						Para atenderle con la mayor rapidez posible, puede llamarnos, enviarnos un whatsapp o visitar nuestras instalaciones.
+	
+					</p><br><br>
+	
+					<ul>
+						<li><b>WHATSAPP:</b> 967 107 014</li>
+						<li><b>TELEFONO FIJO:</b> 967-107-014</li>
+						<li><b>DIRECCION:</b> Jiron Junin-252</li>
+					</ul>
+				</div>
+	
+				<div class="formulario">
+					<form action="#" method="post">
+						<input type="text" name="" class="entrada-not entrada-form" placeholder="Nombre: ">
+						<input type="tel" name="" class="entrada-not entrada-form" placeholder="Número telefónico: ">
+						<input type="email" name="" class="entrada-not entrada-form" placeholder="Dirección de correo: ">
+						<input type="text" name="" class="entrada-not entrada-form" placeholder="Tema: ">
+						<textarea name="" class="entrada-not entrada-form" placeholder="Mensaje:"></textarea><br>
+	
+						<input type="submit" value="Enviar" class="boton-contact">
+					</form>
+				</div>
+	
+			</div>
+	
+			<div class="centrar">
+				<p class="pie">
+					Todos los derechos resevados (c) - Creado Alex Collao
+				</p>
+			</div>
+		</footer>
+	</section>
+
+	
+
+</body>
+</html>
